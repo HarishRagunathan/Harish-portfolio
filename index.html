@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="./assets/HARISH copy.jpg" style="border-radius: 50%;">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><b>Harish</b></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#certificate">Certification</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Harish</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#certificate" onclick="toggleMenu()">Certification</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/HARISH copy.jpg" alt="John Doe profile picture" style="border-radius: 500px;" data-aos="fade-up" data-aos-delay="300" />
+      </div>
+      <div class="section__text" data-aos="fade-up" data-aos-delay="300">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Harish</h1>
+        <p class="section__text__p2">Fullstack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/R Harish.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container" data-aos="fade-up" data-aos-delay="300">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/harish-ragunathan-895357292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"data-aos-delay="300"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/HarishRagunathan'"data-aos-delay="300"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about" data-aos="fade-up">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/harish-about.jpg"
+            alt="Profile picture"
+            class="about-pic" data-aos="fade-up" data-aos-delay="300"
+          />
+        </div>
+        <div class="about-details-container" data-aos="fade-up" data-aos-delay="300">
+          <div class="about-containers">
+            <div class="details-container" data-aos="fade-up" data-aos-delay="300">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Fresher <br />Fullstack Development</p>
+            </div>
+            <div class="details-container" data-aos="fade-up" data-aos-delay="300">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E ECE <br>Final Year</p>
+            </div>
+          </div>
+          <div class="text-container" data-aos="fade-up" data-aos-delay="300">
+            <p style="text-align: justify;"> I am R.Harish from Lalapettai, pursuing my 4th year BE in ECE with a 7.2 CGPA at 
+              Chettinad College of Engineering and Technology, Puliyur, Karur. I'm passionate about 
+              software development and have completed a Python full-stack development course. I also 
+              work as a freelancer to gain practical experience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <section id="experience" data-aos="fade-up" data-aos-delay="300">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="experience-sub-title" >Key Skills</h2 >
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML,CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container" data-aos="fade-up" data-aos-delay="300">
+            <h2 class="experience-sub-title" >Key Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Canva</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/> -->
+    </section>
+    <section data-aos="fade-up" data-aos-delay="300">
+      <p class="section__text__p1" id="certificate">View My Recent</p>
+      <h1 class="title">Certifications</h1>
+      <div class="course">
+        <div class="certification" data-aos="fade-up" data-aos-delay="300">
+          <h3>Internship On Web Development</h3>
+          <p>Completed a five-day web development internship at NewTech, Trichy, from June 21 to June 25,
+            2023. Gained hands-on experience in frontend and backend technologies, contributing to real-world
+            projects and enhancing skills.</p>
+            <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://drive.google.com/file/d/1iB15N3E2W2jVDr5sGo7z0T4jneMwhGv-/view?usp=drive_link'">
+            Certificate <ion-icon name="arrow-up-outline" style="transform: rotate(45deg); position: relative;top: 1px;"></ion-icon>
+          </button>
+         </div>
+       <div class="certification" data-aos="fade-up" data-aos-delay="300">
+        <h3>Python Zero to Hero - GUVI</h3>
+        <p>Completed the Zero to Hero Python Programming course on GUVI, gaining comprehensive
+          knowledge in Python programming, including syntax, data structures, algorithms, and practical
+          problem-solving skills. </p>
+          <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://www.guvi.in/share-certificate/B4kU742169wxab1217'">
+          Certificate <ion-icon name="arrow-up-outline" style="transform: rotate(45deg); position: relative;top: 1px;"></ion-icon>
+        </button>
+       </div>
+       <div class="certification" data-aos="fade-up" data-aos-delay="300">
+        <h3>Beginner to Expert UI/UX Design - GUVI</h3>
+        <p>Completed the UI & UX course on Figma in GUVI, acquiring skills in user interface design, user
+          experience principles, and prototyping, enhancing the ability to create intuitive and visually
+          appealing designs. </p>
+          <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://www.guvi.in/share-certificate/mGH72W841C2718lq27'">
+          Certificate <ion-icon name="arrow-up-outline" style="transform: rotate(45deg); position: relative;top: 1px;"></ion-icon>
+        </button>
+       </div>
+       <div class="certification" data-aos="fade-up" data-aos-delay="300">
+        <h3>Zoho-Creator Handson training</h3>
+        <p>Attended a 3-day hands-on training on Zoho Creator No-Code 
+          Application Development from July 29 to July 31, 2024, gaining practical experience in
+          building applications without coding, enhancing skills in 
+          rapid application development and workflow automation.</p>
+          <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://drive.google.com/file/d/1SeOUl-2zCAgnwFG2j5T9o3G89ZRIfVg-/view?usp=drive_link'">
+          Certificate <ion-icon name="arrow-up-outline" style="transform: rotate(45deg); position: relative;top: 1px;"></ion-icon>
+        </button>
+       </div>
+       <div class="certification" data-aos="fade-up" data-aos-delay="300">
+        <h3>AMD-AI Contest</h3>
+        <p>Participated in the AMD AI contest and successfully submitted an idea on 
+          Generative AI, showcasing innovative thinking in leveraging AI for creative applications. 
+          This experience highlights engagement with cutting-edge technology and contributing to the AI community.</p>
+          <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://drive.google.com/file/d/1_KrepfmH1JT8PxTGHxVP4f7ucEK_hX2J/view?usp=sharing'">
+          Certificate <ion-icon name="arrow-up-outline" style="transform: rotate(45deg); position: relative;top: 1px;"></ion-icon>
+        </button>
+       </div>
+      </div>
+    </section>
+    <section id="projects" style="margin-top: 40%;" data-aos="fade-up" data-aos-delay="300">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="article-container" >
+              <img
+                src="./assets/project.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Crecab</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/HarishRagunathan/Crecab.git'"
+              >
+                Source
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://harishragunathan.github.io/Crecab/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="article-container">
+              <img
+                src="./assets/weather.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/HarishRagunathan/Weather-App.git'"
+              >
+              Source
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://harishragunathan.github.io/Weather-App/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="article-container">
+              <img
+                src="./assets/project (1).png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Todo-List</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HarishRagunathan/todo.git'">Source</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://harishragunathan.github.io/todo/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="article-container">
+              <img src="./assets/loanaware.png" alt="Project 2" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">LoanAware</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/HarishRagunathan/loanaware.git'">Source</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Going on</button>
+            </div>
+          </div>
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="article-container">
+              <img
+                src="./assets/shophere.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ShopHere</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/HarishRagunathan/Shopehere.git'" 
+              >
+              Source
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Going on
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="article-container">
+              <img
+                src="./assets/grabinfo.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Grabinfo</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Going on</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Going on</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
+    </section>
+    <section id="contact" data-aos="fade-up" data-aos-delay="300">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          /><p><a href="mailto:harishragunathan758@gmail.com" target="_blank">E-Mail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"/><p><a href="https://www.linkedin.com/in/harish-ragunathan-895357292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+          src="./assets/instagram.png"
+          alt="My LinkedIn profile"
+          class="icon"/>
+          <p><a href="https://www.instagram.com/harishr_offl?igsh=MW44dGNodnJrZ2I0ZA==" target="_blank">Instagram</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+          src="./assets/whatsapp.png"
+          alt="My LinkedIn profile"
+          class="icon"/>
+          <p><a href="https://wa.me/9360743435" target="_blank">What's App</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#certificate">Certification</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Harish. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+  </script>
+  </body>
+</html>
